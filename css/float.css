@@ -69,7 +69,8 @@ header > .app-main-btn {
     margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
 }
 .app-main-wrap .app-bg-cont img{
-    width: 100%;
+  max-height: 500px;
+  width: 100%;
 }
 footer {
     margin: 0 calc(var(--gutter-width) * 2);
