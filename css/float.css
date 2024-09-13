@@ -72,6 +72,7 @@ header > .app-main-btn {
   max-height: 500px;
   width: 100%;
 }
+
 footer {
     margin: 0 calc(var(--gutter-width) * 2);
     height: var(--footer-height);
