@@ -1,11 +1,11 @@
 :root {
   --title-color-mobile: red;
-  --title-color-table: green;
-  --title-color-desktop: blue;
+  --title-color-table: rgb(0, 21, 128);
+  --title-color-desktop: green;
 
   --button-color-mobile: blue;
   --button-color-table: brown;
-  --button-color-desktop: red;
+  --button-color-desktop: green;
 
   --gutter-width: 20px;
   --header-height: 100px;
