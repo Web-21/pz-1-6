@@ -22,12 +22,12 @@ h2 {
 }
 
 
+.app-table, .app-desktop {
+  display: none;
+}
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  .app-table, .app-desktop {
-    display: none !important;
-  }
   
 }
 
