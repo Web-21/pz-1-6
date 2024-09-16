@@ -51,6 +51,7 @@
   .app-main-wrap {
     display: flex;
     flex-direction: row;
+    height: 100%;
   }
   .app-main-wrap .app-main {
     display: flex;
@@ -79,7 +80,7 @@
   .app-main-wrap .app-sidebar {
     display: flex;
     width: calc(25% - var(--gutter-width));
-    height: calc(100vh - var(--header-height));
+    height: auto;
     margin: 0 var(--gutter-width) 0 0;
   }
 }
