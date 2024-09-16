@@ -1,14 +1,14 @@
-
 @media (min-width: 375px) and (max-width: 767px) {
     a {
         color: var(--title-color-mobile);
     }
 
-    .app-nav-list{
+    .app-nav-list {
         display: flex;
         justify-content: space-between;
         width: 90%;
     }
+
     .app-main-btn {
         margin-left: 70%;
     }
@@ -33,9 +33,6 @@
         display: flex;
     }
 }
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
