@@ -1,13 +1,15 @@
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 375px) and (max-width: 767px) {
-  header {
-    flex-direction: column;
+@media (min-width: 375px) {
+  header .container-header > h2 > a {
+    color: var(--title-color-mobile);
   }
-  header .app-main-btn {
-    align-self: flex-end;
+  .container-header {
+    display: grid;
+    grid-template-rows: 40px 1fr 30px;
+    align-items: baseline;
   }
-  h2 {
-    margin: 0;
+  .app-main-btn {
+    justify-self: end;
   }
 }
 
@@ -17,32 +19,30 @@
     color: var(--title-color-table);
   }
   .container-header {
-    display: flex;
+    grid-template-columns: 70px 2fr 90px;
+    grid-column-gap: 12px;
+    align-items: baseline;
   }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .app-main-wrap .app-main {
-    width: calc(75% - var(--gutter-width));
     height: 100%;
     margin: 0 var(--gutter-width) 0 0;
   }
-
   .app-main-wrap .app-sidebar {
-    width: calc(25% - var(--gutter-width));
-    height: 90vh;
+    height: 100%;
     margin: 0 0 0 var(--gutter-width);
   }
   header .container-header > h2 > a {
     color: var(--title-color-desktop);
   }
   .app-main-wrap {
-    display: flex;
-    justify-content: space-around;
-  }
-  .container-header {
-    display: flex;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "app-main app-sidebar";
+    grid-column-gap: 8px;
+    display: grid;
   }
   header .app-nav-list > li a {
     color: var(--title-color-desktop);
