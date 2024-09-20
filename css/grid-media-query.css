@@ -1,0 +1,29 @@
+@media only screen and (max-width: 450px) {
+    
+
+    .iav_container {
+        padding: 0 20px;
+        height: calc(100vh - var(--header-height) - var(--gutter-width)* 4);
+    }
+
+    .iav_main {
+        grid-template-columns: 3fr;
+    }
+
+    .iav_section {
+        padding: 0 20px;
+    }
+
+    .iav_sidebar {
+        margin: 0 20px;
+        padding: 10px;
+        height: auto;
+        grid-column: 1 / 2;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    .iav_container {
+        height: calc(100vh - var(--header-height) - var(--gutter-width)* 4);
+    }
+}
