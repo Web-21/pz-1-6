@@ -1,18 +1,16 @@
 @media only screen and (max-width: 450px) {
-    .iav_header {
-        color: var(--title-color-mobile);
-        height: calc(var(--header-height) - var(--gutter-width));
+    .iav_main {
+        flex-direction: column;
+        margin: 50px 20px;
     }
 
     .iav_section {
-        float: none;
-        width: 100%;
+        width: 90%;
         padding: 0 20px;
     }
 
     .iav_sidebar {
-        float: none;
-        width: 90%;
+        width: 83%;
         margin: 10px 20px;
         padding: 10px;
         height: auto;

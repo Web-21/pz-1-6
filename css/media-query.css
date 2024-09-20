@@ -1,99 +1,80 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap*/
-/*utils*/
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: var(--title-color-mobile);
-  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+@media only screen and (max-width: 450px) {
+    .iav_header {
+        color: var(--title-color-mobile);
+    }
+
+    .iav_header  h1 {
+        font-size: 24px;
+        margin: 7px 0 0 0;
+    }
+
+    .iav_ulist > li > a {
+        color: var(--title-color-mobile);
+        font-size: 14px;
+    }
+
+    .iav_header button {  
+        background-color: var(--button-color-mobile);
+        font-size: 16px;
+        padding: 7px 9px;
+    }
+
+    h2{
+        color: var(--title-color-mobile);
+        font-size: 20px;
+    }
+
+    .iav_description {
+        font-size: small;
+    }
+
+    #iav_img_1, #iav_img_2 {
+        display: none;
+    }
+
+    #iav_img_3 {
+        display: block;
+    }
 }
 
-h2 {
-  font-size: 24px;
-  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
-  font-weight: bold;
-  color: var(--title-color-mobile);
-}
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    .iav_header {
+        color: var(--title-color-table);
+    }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    .iav_header  h1 {
+        font-size: 26px;
+        margin: 7px 0 0 0;
+        color: var(--title-color-table);
+    }
 
+    .iav_ulist > li > a {
+        color: var(--title-color-table);
+        font-size: medium;
+    }
 
-.app-table, .app-desktop {
-  display: none;
-}
+    .iav_header button {  
+        background-color: var(--button-color-table);
+    }
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+    h2{
+        color: var(--title-color-table);
+        font-size: 20px;
+    }
 
-}
+    .iav_header button {
+        font-size: 16px;
+    }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-  header > h2 > a {
-    color: var(--title-color-table);
-  }
+    .iav_description {
+        font-size: medium;
+    }
 
-  header .app-nav-list > li a {
-    color: var(--title-color-table);
-  }
+    #iav_img_2 {
+        display: block;
+    }
 
-  header .app-main-btn {
-    background: var(--button-color-table);
-  }
-
-  h1 {
-    color: var(--title-color-table);
-  }
-
-  h2 {
-    color: var(--title-color-table);
-  }
-
-  .app-mobile {
-    display: none;
-  }
-
-  .app-table {
-    display: inline;
-  }
-
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  .app-table {
-    display: none;
-  }
-
-  .app-desktop {
-    display: inline;
-  }
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  header > h2 > a {
-    color: var(--title-color-desktop);
-  }
-
-  header .app-nav-list > li a {
-    text-decoration: none;
-    color: var(--title-color-desktop);
-  }
-
-  header .app-main-btn {
-    background: var(--button-color-desktop);
-  }
-
-  h1 {
-    color: var(--title-color-desktop);
-  }
-
-  h2 {
-    color: var(--title-color-desktop);
-  }
+    #iav_img_1, #iav_img_3 {
+        display: none;
+    }
 }
