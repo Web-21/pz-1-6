@@ -22,7 +22,7 @@ h2 {
 }
 
 
-.app-table, .app-desktop {
+.site-table, .site-desktop {
   display: none;
 }
 
@@ -37,11 +37,11 @@ h2 {
     color: var(--title-color-table);
   }
 
-  header .app-nav-list > li a {
+  header .site-nav-list > li a {
     color: var(--title-color-table);
   }
 
-  header .app-main-btn {
+  header .site-main-btn {
     background: var(--button-color-table);
   }
 
@@ -53,11 +53,11 @@ h2 {
     color: var(--title-color-table);
   }
 
-  .app-mobile {
+  .site-mobile {
     display: none;
   }
 
-  .app-table {
+  .site-table {
     display: inline;
   }
 
@@ -65,27 +65,19 @@ h2 {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .app-table {
+  .site-table {
     display: none;
   }
-
-  .app-desktop {
-    display: inline;
-  }
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  header > h2 > a {
+   header > h2 > a {
     color: var(--title-color-desktop);
   }
 
-  header .app-nav-list > li a {
+  header .site-nav-list > li a {
     text-decoration: none;
     color: var(--title-color-desktop);
   }
 
-  header .app-main-btn {
+  header .site-main-btn {
     background: var(--button-color-desktop);
   }
 
@@ -96,4 +88,13 @@ h2 {
   h2 {
     color: var(--title-color-desktop);
   }
+
+  .site-desktop {
+    display: inline;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+ 
 }

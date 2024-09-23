@@ -2,7 +2,7 @@ html {
     margin: 0;
     font-size: 14px;
     font-family: Arial;
-    height: 100%;
+    /* height: 100%; */
 }
 body {
     height: 100%;
@@ -28,36 +28,36 @@ header > nav {
     margin-top: 7px;
 }
 
-header .app-nav-list > li{
+header .site-nav-list > li{
     float: left;
     margin-left: var(--gutter-width);
 }
-header .app-nav-list > li a {
+header .site-nav-list > li a {
     text-decoration: none;
     color: var(--title-color-mobile);
 }
-header .app-main-btn {
+header .site-main-btn {
     border: none;
     padding: calc(var(--gutter-width) / 2) var(--gutter-width);
     background: var(--button-color-mobile);
     color: white;
     text-transform: uppercase;
 }
-header > .app-main-btn {
+header > .site-main-btn {
     float: right;
 }
 
 /*main*/
-.app-main-wrap {
+.site-main-wrap {
     margin: 0 calc(var(--gutter-width) * 2);
     height: calc(100% - var(--header-height) - var(--footer-height));
     box-sizing: border-box;
 }
-.app-main-wrap .app-main{
+.site-main-wrap .site-main{
     text-align: center;
     width: 100%;
 }
-.app-main-wrap .app-sidebar{
+.site-main-wrap .site-sidebar{
     border: 1px solid #000;
     float: left;
     width: 100%;
@@ -65,10 +65,10 @@ header > .app-main-btn {
     padding: var(--gutter-width);
     margin-top: var(--gutter-width);
 }
-.app-main-wrap .desc {
+.site-main-wrap .desc {
     margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
 }
-.app-main-wrap .app-bg-cont img{
+.site-main-wrap .site-bg-cont img{
     width: 100%;
 }
 footer {
