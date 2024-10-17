@@ -1,0 +1,78 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 375px) {
+  header .container-header > h2 > a {
+    color: var(--title-color-mobile);
+  }
+  .container-header {
+    display: grid;
+    grid-template-rows: 40px 1fr 30px;
+    align-items: baseline;
+  }
+  .app-main-btn {
+    justify-self: end;
+  }
+  .app-nav-list {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  header .container-header > h2 > a {
+    color: var(--title-color-table);
+  }
+  .container-header {
+    grid-template-columns: 70px 2fr 90px;
+    grid-column-gap: 12px;
+    align-items: baseline;
+  }
+  .app-nav-list {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .app-main-wrap .app-main {
+    height: 100%;
+    margin: 0 var(--gutter-width) 0 0;
+  }
+  .app-main-wrap .app-sidebar {
+    height: 100%;
+    margin: 0 0 0 var(--gutter-width);
+  }
+  header .container-header > h2 > a {
+    color: var(--title-color-desktop);
+  }
+  .app-main-wrap {
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "app-main app-sidebar";
+    grid-column-gap: 8px;
+    display: grid;
+  }
+  header .app-nav-list > li a {
+    color: var(--title-color-desktop);
+  }
+  .app-main > h1 {
+    color: var(--title-color-desktop);
+  }
+  .app-sidebar > h2 {
+    color: var(--title-color-desktop);
+  }
+  footer > h2 {
+    color: var(--title-color-desktop);
+  }
+  header .app-main-btn {
+    background-color: var(--button-color-desktop);
+  }
+  .app-nav-list {
+    display: grid;
+    grid-template-columns: 12% 12% 12%;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
