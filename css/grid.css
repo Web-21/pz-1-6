@@ -47,7 +47,7 @@ header .app-main-btn {
 }
 .app-nav-list {
   display: grid;
-  grid-template-columns: 90px 90px 90px;
+  grid-template-columns: 10% 10% 10%;
 }
 /*main*/
 .app-main-wrap {

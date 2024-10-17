@@ -11,6 +11,10 @@
   .app-main-btn {
     justify-self: end;
   }
+  .app-nav-list {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -22,6 +26,10 @@
     grid-template-columns: 70px 2fr 90px;
     grid-column-gap: 12px;
     align-items: baseline;
+  }
+  .app-nav-list {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
   }
 }
 
@@ -58,6 +66,10 @@
   }
   header .app-main-btn {
     background-color: var(--button-color-desktop);
+  }
+  .app-nav-list {
+    display: grid;
+    grid-template-columns: 12% 12% 12%;
   }
 }
 
