@@ -15,7 +15,7 @@ header {
 header > h2 {
     float: left;
     vertical-align: middle;
-    margin: 0;
+    margin: 3px;
 }
 header > h2 > a{
     color: var(--title-color-mobile);
