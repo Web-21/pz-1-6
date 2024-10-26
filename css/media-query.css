@@ -1,3 +1,6 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+/*utils*/
 h1 {
   font-size: 32px;
   font-weight: bold;
