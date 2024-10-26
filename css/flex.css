@@ -47,7 +47,8 @@ header nav {
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  margin-left: auto;  
+  margin-left: auto;
+  color: white;  
 }
 .app-main-wrap {
   display: flex;
