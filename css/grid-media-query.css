@@ -13,22 +13,22 @@
   /*Large devices (desktops, 992px and up)*/
   @media (min-width: 992px) {
     .app-main-wrap {
-      grid-template-columns: 3fr 1fr; /* Для великих екранів: основний контент займає більше місця */
-      gap: var(--gutter-width); /* Відстань між колонками */
+      grid-template-columns: 3fr 1fr; 
+      gap: var(--gutter-width);
     }
   
     /* Вирівнювання по висоті якщо потрібно */
     .app-main,
     .app-sidebar {
       align-self: start;
-      height: 100%; /* Автоматична висота для контенту */
+      height: 100%; 
     }
   }
   
   /*Extra large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
     .app-main-wrap {
-      grid-template-columns: 4fr 1fr; /* Ще більше місця для контенту на великих екранах */
+      grid-template-columns: 4fr 1fr;
     }
   }
   

@@ -72,14 +72,22 @@
 
   header, footer {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr auto;
     gap: 10px;
-    color:black;
+    color: black;
     padding: 20px;
     border-radius: 8px;
     align-items: center;
-    
-    
+  }
+  
+  footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  footer p {
+    margin-top: 1px;
+    text-align: center; 
   }
   .clearfix {
     content: "";
