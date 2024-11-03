@@ -9,5 +9,5 @@
 
   --gutter-width: 20px;
   --header-height: 100px;
-  --footer-height: 95%;
+  --footer-height: -100%;
 }
