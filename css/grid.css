@@ -68,7 +68,7 @@ footer {
 }
 header, footer {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr auto;
   gap: 10px;
   color:black;
   padding: 20px;
@@ -79,4 +79,13 @@ header, footer {
   content: "";
   display: block;
   clear: both;
+}
+footer {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+footer p {
+  margin-top: 1px;
+  text-align: center;
 }
