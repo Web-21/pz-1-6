@@ -5,9 +5,9 @@
 
   --button-color-mobile: blue;
   --button-color-table: brown;
-  --button-color-desktop: #CCC;
+  --button-color-desktop: red;
 
   --gutter-width: 20px;
   --header-height: 100px;
-  --footer-height: 100px;
+  --footer-height: 95%;
 }
