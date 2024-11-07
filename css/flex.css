@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  flex-direction: row;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+.app-main-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  height: 35px;
+  width: 94.56px;
+  margin-left: auto;
+}
+
+.app-main-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+.app-main {
+  flex: 3;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+section.app-main h1 {
+  text-align: center;
+}
+
+.app-sidebar {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 2px;
+}
+
+.app-bg-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.app-bg-cont img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 1px;
+  text-align: center;
+}

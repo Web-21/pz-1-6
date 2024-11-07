@@ -1,0 +1,47 @@
+
+@media (max-width: 576px) {
+  header > h2 > a {
+    color: var(--title-color-mobile);
+  }
+  .app-sidebar {
+    grid-column: 1; 
+  }
+  a {
+    color: var(--title-color-mobile);}
+    
+}
+
+
+@media (min-width: 768px) {
+  .app-main-wrap {
+    grid-template-columns: 2fr 1fr;
+  }
+  .app-sidebar {
+    grid-column: 2/3; 
+  }
+}
+
+@media (min-width: 992px) {
+  .app-main-wrap {
+    grid-template-columns: 3fr 1fr; 
+    gap: var(--gutter-width);
+  }
+
+  .app-main,
+  .app-sidebar {
+    align-self: start;
+    height: 100%; 
+  }
+  .app-sidebar {
+    grid-column: 2/3; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-main-wrap {
+    grid-template-columns: 4fr 1fr;
+  }
+  .app-sidebar {
+    grid-column: 2/3; 
+  }
+}

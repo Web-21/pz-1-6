@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+    .app-main-wrap {
+      flex-direction: row;
+    }
+
+    header h2, footer h2 {
+      font-size: 1.75rem;
+    }
+
+    .app-main-btn {
+      padding: 10px 25px;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    header h2, footer h2 {
+      font-size: 2rem;
+    }
+
+    .app-main-btn {
+      padding: 10px 30px;
+      font-size: 1.2rem;
+    }
+
+    .app-bg-cont img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
