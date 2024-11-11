@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <title>PZ_1_6</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/variables.css">
+  <link rel="stylesheet" type="text/css" href="css/flex-grid.css">
+  <link rel="stylesheet" type="text/css" href="css/media-query.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h2><a href="#">Header</a></h2>
+      <nav>
+        <ul class="app-nav-list">
+          <li><a href="#">nav link 1</a></li>
+          <li><a href="#">nav link 2</a></li>
+          <li><a href="#">nav link 3</a></li>
+        </ul>
+      </nav>
+      <button class="app-main-btn">button</button>
+    </header>
+
+    <div class="app-main-wrap">
+      <section class="app-main">
+        <h1>Title layout</h1>
+        <p class="desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+        </p>
+        <div class="app-bg-cont">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/main-table.jpg">
+            <img src="img/main-mobile.jpeg" alt="main image">
+          </picture>
+        </div>
+      </section>
+      <aside class="app-sidebar">
+        <h2>Sidebar</h2>
+      </aside>
+    </div>
+
+    <footer>
+      <h2>Footer</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+    </footer>
+  </div>
+</body>
+</html>
