@@ -1,41 +1,76 @@
 /* grid-media-query.css */
 
-/* Мобильная версия */
-@media (max-width: 600px) {
-    .app-main-wrap {
-      grid-template-columns: 1fr;
-    }
-    .app-sidebar {
-      display: none;
-    }
-    .app-bg-cont .app-mobile {
-      display: block;
-      width: 100%;
-    }
+/* Мобільні пристрої (до 576px) */
+@media (max-width: 576px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr;
   }
-  
-  /* Планшетная версия */
-  @media (min-width: 601px) and (max-width: 1024px) {
-    .app-main-wrap {
-      grid-template-columns: 1fr 1fr;
-    }
-    .app-bg-cont .app-table {
-      display: block;
-      width: 100%;
-    }
+
+  .app-sidebar {
+    display: none;
   }
-  
-  /* Десктопная версия */
-  @media (min-width: 1025px) {
-    .app-main-wrap {
-      grid-template-columns: 1fr 3fr;
-    }
-    .app-sidebar {
-      display: block;
-    }
-    .app-bg-cont .app-desktop {
-      display: block;
-      width: 100%;
-    }
+
+  .app-bg-cont .app-mobile {
+    display: block;
+    width: 100%;
   }
-  
+
+  .app-bg-cont .app-table {
+    display: none;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: none;
+  }
+}
+
+/* Планшетні пристрої (до 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .app-bg-cont .app-table {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: none;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: none;
+  }
+}
+
+/* Десктопи (від 992px і більше) */
+@media (min-width: 992px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .app-sidebar {
+    display: block;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-table {
+    display: none;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: none;
+  }
+}
+
+/* Великі десктопи (від 1200px і більше) */
+@media (min-width: 1200px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr 3fr;
+  }
+}
