@@ -1,84 +1,45 @@
-/* grid.css */
-
-/* Загальні стилі */
-body {
-  margin: 0;
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-  height: 100%;
-}
-
-header {
-  padding: var(--gutter-width) calc(var(--gutter-width) * 2);
-  height: var(--header-height);
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-}
-
-header > h2 > a {
-  color: var(--title-color-mobile);
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-header > nav {
-  display: flex;
-}
-
-header .app-nav-list > li {
-  margin-left: var(--gutter-width);
-}
-
-header .app-nav-list > li a {
-  text-decoration: none;
-  color: var(--title-color-mobile);
-}
-
-header .app-main-btn {
-  border: none;
-  padding: calc(var(--gutter-width) / 2) var(--gutter-width);
-  background: var(--button-color-mobile);
-  color: white;
-  text-transform: uppercase;
-  margin-left: auto;
-}
-
-/* Main Content */
-.app-main-wrap {
-  margin: 0 calc(var(--gutter-width) * 2);
-  height: calc(100% - var(--header-height) - var(--footer-height));
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: var(--gutter-width);
-}
-
-.app-main-wrap .app-main {
-  padding: 15px;
-}
-
-.app-main-wrap .app-sidebar {
-  padding: 15px;
-  border: 1px solid #000;
-  box-sizing: border-box;
-}
-
-.app-main-wrap .desc {
-  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
-}
-
-.app-main-wrap .app-bg-cont img {
-  width: 100%;
-}
-
-/* Footer */
-footer {
-  margin: 0 calc(var(--gutter-width) * 2);
-  height: var(--footer-height);
-  text-align: center;
-  overflow: auto;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <title>PZ_1_6 - Grid</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/variables.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/grid-media-query.css">
+</head>
+<body>
+<header>
+  <h2><a href="#">Header</a></h2>
+  <nav>
+    <ul class="app-nav-list">
+      <li><a href="#">nav link 1</a></li>
+      <li><a href="#">nav link 2</a></li>
+      <li><a href="#">nav link 3</a></li>
+    </ul>
+  </nav>
+  <button class="app-main-btn">button</button>
+</header>
+<div class="app-main-wrap">
+  <section class="app-main">
+    <h1>Title layout</h1>
+    <p class="desc">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    <div class="app-bg-cont">
+      <img class="app-mobile" src="img/main-mobile.jpeg" alt="main-mobile img">
+      <img class="app-table" src="img/main-table.jpg" alt="main-table img">
+      <img class="app-desktop" src="img/main-desktop.jpg" alt="main-desktop img">
+    </div>
+  </section>
+  <aside class="app-sidebar">
+    <h2>Sidebar</h2>
+  </aside>
+</div>
+<footer>
+  <h2>Footer</h2>
+  <p>Lorem Ipsum is simply dummy text.</p>
+</footer>
+</body>
+</html>
