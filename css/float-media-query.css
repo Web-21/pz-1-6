@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+  header > h2 > a {
+      color: var(--title-color-table); /* Колір заголовка для планшетів */
+  }
+  header .app-main-btn {
+      background: var(--button-color-table); /* Колір кнопки для планшетів */
+  }
+  h1,h2,li a{
+    color: var(--title-color-table);
+  }
+}
+
+@media (min-width: 992px) {
+  .app-main-wrap .app-main {
+      width: 75%; /* Головний контент займає 75% */
+      float: left;
+  }
+  .app-main-wrap .app-sidebar {
+      width: 25%; /* Бокова панель займає 25% */
+      float: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  header > h2 > a {
+      color: var(--title-color-desktop); /* Колір заголовка для десктопів */
+  }
+  
+  header .app-main-btn {
+      background: var(--button-color-desktop); /* Колір кнопки для десктопів */
+  }
+  h1,h2,li a{
+    color: var(--title-color-desktop);
+  }
+}
+
+
+@media (max-width: 750px) {
+  header > h2 > a {
+      color: var(  --title-color-mobile); 
+  }
+  header .app-main-btn {
+      background: var(--button-color-mobile);
+  }
+  h1,h2,li a{
+    color: var(  --title-color-mobile);
+  }
+}

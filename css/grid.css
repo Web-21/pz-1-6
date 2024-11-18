@@ -1,91 +1,66 @@
 html {
     margin: 0;
     font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     height: 100%;
-}
-
-body {
+  }
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--gutter-width);
     height: 100%;
-}
-
-header {
+  }
+  
+  header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: var(--gutter-width) calc(var(--gutter-width) * 2);
     height: var(--header-height);
     box-sizing: border-box;
-}
-
-header > h2 {
-    margin: 0;
-}
-
-header > h2 > a {
+  }
+  header > h2 > a {
     color: var(--title-color-mobile);
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-}
-
-header nav {
-    display: flex;
-    justify-content: center;
-    gap: var(--gutter-width);
-}
-
-header .app-nav-list {
+  }
+  header nav {
     display: flex;
     gap: var(--gutter-width);
-}
-
-header .app-nav-list > li a {
-    text-decoration: none;
-    color: var(--title-color-mobile);
-}
-
-header .app-main-btn {
+  }
+  header .app-main-btn {
     border: none;
     padding: calc(var(--gutter-width) / 2) var(--gutter-width);
     background: var(--button-color-mobile);
     color: white;
     text-transform: uppercase;
-}
-
-.app-main-wrap {
+  }
+  .app-bg-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  
+  .app-main-wrap {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: calc(100% - var(--header-height) - var(--footer-height));
-    box-sizing: border-box;
     gap: var(--gutter-width);
-}
-
-.app-main {
+    margin: var(--gutter-width);
+  }
+  .app-main-wrap .app-main {
+    grid-column: span 1;
     text-align: center;
-    width: 100%;
-}
-
-.app-sidebar {
+  }
+  .app-main-wrap .app-sidebar {
+    grid-column: span 1;
     border: 1px solid #000;
-    box-sizing: border-box;
     padding: var(--gutter-width);
-    width: 100%;
-}
-
-.desc {
-    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
-}
-
-.app-bg-cont img {
-    width: 100%;
-}
-
-footer {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: var(--footer-height);
-    text-align: center;
-    overflow: auto;
     box-sizing: border-box;
-}
+  }
+  footer {
+    text-align: center;
+    height: var(--footer-height);
+  }
+  

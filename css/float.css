@@ -1,0 +1,83 @@
+html {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial;
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+    height: var(--header-height);
+    box-sizing: border-box;
+    overflow: hidden; /* Забезпечує коректне вирівнювання елементів */
+}
+header > h2 {
+    float: left;
+    margin: 0;
+}
+header > h2 > a {
+    color: var(--title-color-mobile);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header nav {
+    float: left;
+    margin-left: var(--gutter-width);
+}
+header .app-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Забезпечує вирівнювання */
+}
+header .app-nav-list > li {
+    float: left;
+    margin-right: var(--gutter-width);
+}
+header .app-nav-list > li a {
+    text-decoration: none;
+}
+header .app-main-btn {
+    float: right;
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Основний контент */
+.app-main-wrap {
+    margin: var(--gutter-width);
+    overflow: hidden; /* Забезпечує коректний потік елементів */
+}
+.app-main-wrap .app-main {
+    float: left;
+    width: 75%; /* Відповідає flex: 3 */
+    text-align: center;
+}
+.app-main-wrap .app-sidebar {
+    float: right;
+    width: 25%; /* Відповідає flex: 1 */
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: var(--gutter-width);
+}
+
+.app-bg-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    clear: both; /* Забезпечує позиціонування під основним контентом */
+    text-align: center;
+    height: var(--footer-height);
+    box-sizing: border-box;
+}

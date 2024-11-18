@@ -1,31 +1,69 @@
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
+/* Приховати всі зображення для мобільних пристроїв (менше 768px) */
+@media (max-width: 767px) {
+    .app-mobile {
+        display: block;
+    }
+    .app-table {
+        display: none;
+    }
+    .app-desktop {
+        display: none;
+    }
+    h1,h2,li a{
+        color: var(  --title-color-mobile);
+      }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
+/* Відобразити лише зображення для планшетів (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .app-mobile {
+        display: none;
+    }
+    .app-table {
+        display: block;
+    }
+    .app-desktop {
+        display: none;
+    }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Відобразити лише зображення для десктопів (992px і більше) */
 @media (min-width: 992px) {
+    .app-mobile {
+        display: none;
+    }
+    .app-table {
+        display: none;
+    }
+    .app-desktop {
+        display: block;
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+    header > h2 > a {
+      color: var(--title-color-table);
+    }
+    header .app-main-btn {
+      background: var(--button-color-table);
+    }
     .app-main-wrap {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: var(--gutter-width);
+      grid-template-columns: 3fr 1fr;
     }
-
-    .app-main-wrap .app-main {
-        height: 100%;
+  }
+  
+  @media (min-width: 1200px) {
+    header > h2 > a {
+      color: var(--title-color-desktop);
     }
-
-    .app-main-wrap .app-sidebar {
-        height: 100%;
+    header .app-main-btn {
+      background: var(--button-color-desktop);
     }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
+    .app-main-wrap {
+      grid-template-columns: 4fr 1fr;
+    }
+  }
+  
