@@ -6,76 +6,78 @@ html {
 }
 body {
     height: 100%;
+    margin: 0;
 }
+
 header {
     padding: var(--gutter-width) calc(var(--gutter-width) * 2);
     height: var(--header-height);
     box-sizing: border-box;
+    overflow: hidden; /* Забезпечує коректне вирівнювання елементів */
 }
 header > h2 {
     float: left;
-    vertical-align: middle;
     margin: 0;
 }
-header > h2 > a{
+header > h2 > a {
     color: var(--title-color-mobile);
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
 }
-header > nav {
-    float: left;
-    margin-top: 7px;
-}
-
-header .app-nav-list > li{
+header nav {
     float: left;
     margin-left: var(--gutter-width);
 }
+header .app-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Забезпечує вирівнювання */
+}
+header .app-nav-list > li {
+    float: left;
+    margin-right: var(--gutter-width);
+}
 header .app-nav-list > li a {
     text-decoration: none;
-    color: var(--title-color-mobile);
 }
 header .app-main-btn {
+    float: right;
     border: none;
     padding: calc(var(--gutter-width) / 2) var(--gutter-width);
     background: var(--button-color-mobile);
     color: white;
     text-transform: uppercase;
 }
-header > .app-main-btn {
-    float: right;
-}
 
-/*main*/
+/* Основний контент */
 .app-main-wrap {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: calc(100% - var(--header-height) - var(--footer-height));
-    box-sizing: border-box;
+    margin: var(--gutter-width);
+    overflow: hidden; /* Забезпечує коректний потік елементів */
 }
-.app-main-wrap .app-main{
-    text-align: center;
-    width: 100%;
-}
-.app-main-wrap .app-sidebar{
-    border: 1px solid #000;
+.app-main-wrap .app-main {
     float: left;
-    width: 100%;
+    width: 75%; /* Відповідає flex: 3 */
+    text-align: center;
+}
+.app-main-wrap .app-sidebar {
+    float: right;
+    width: 25%; /* Відповідає flex: 1 */
+    border: 1px solid #000;
     box-sizing: border-box;
     padding: var(--gutter-width);
-    margin-top: var(--gutter-width);
-}
-.app-main-wrap .desc {
-    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
-}
-.app-main-wrap .app-bg-cont img{
-    width: 100%;
-}
-footer {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: var(--footer-height);
-    text-align: center;
-    overflow: auto;
-    box-sizing: border-box;
 }
 
+.app-bg-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    clear: both; /* Забезпечує позиціонування під основним контентом */
+    text-align: center;
+    height: var(--footer-height);
+    box-sizing: border-box;
+}

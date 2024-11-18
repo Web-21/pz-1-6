@@ -1,0 +1,68 @@
+html {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial;
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+    height: var(--header-height);
+    box-sizing: border-box;
+  }
+  header > h2 > a {
+    color: var(--title-color-mobile);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  header nav {
+    display: flex;
+  }
+  header .app-nav-list {
+    display: flex;
+    gap: var(--gutter-width);
+  }
+  header .app-main-btn {
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+  }
+  .app-bg-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .app-main-wrap {
+    display: flex;
+    flex: 1;
+    gap: var(--gutter-width);
+    margin: var(--gutter-width);
+  }
+  .app-main-wrap .app-main {
+    flex: 3;
+    text-align: center;
+  }
+  .app-main-wrap .app-sidebar {
+    flex: 1;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: var(--gutter-width);
+  }
+  footer {
+    text-align: center;
+    height: var(--footer-height);
+    box-sizing: border-box;
+  }
+  

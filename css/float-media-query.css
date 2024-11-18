@@ -1,32 +1,48 @@
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-}
-
-/*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
-
+  header > h2 > a {
+      color: var(--title-color-table); /* Колір заголовка для планшетів */
+  }
+  header .app-main-btn {
+      background: var(--button-color-table); /* Колір кнопки для планшетів */
+  }
+  h1,h2,li a{
+    color: var(--title-color-table);
+  }
 }
 
-/*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .app-main-wrap .app-main{
-    float: left;
-    width: calc(75% - var(--gutter-width));
-    height: 100%;
-    margin:0 var(--gutter-width) 0 0;
+  .app-main-wrap .app-main {
+      width: 75%; /* Головний контент займає 75% */
+      float: left;
   }
-
-  .app-main-wrap .app-sidebar{
-    float: left;
-    width: calc(25% - var(--gutter-width));
-    height: 100%;
-    margin:0 0 0 var(--gutter-width);
+  .app-main-wrap .app-sidebar {
+      width: 25%; /* Бокова панель займає 25% */
+      float: right;
   }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  header > h2 > a {
+      color: var(--title-color-desktop); /* Колір заголовка для десктопів */
+  }
+  
+  header .app-main-btn {
+      background: var(--button-color-desktop); /* Колір кнопки для десктопів */
+  }
+  h1,h2,li a{
+    color: var(--title-color-desktop);
+  }
+}
 
+
+@media (max-width: 750px) {
+  header > h2 > a {
+      color: var(  --title-color-mobile); 
+  }
+  header .app-main-btn {
+      background: var(--button-color-mobile);
+  }
+  h1,h2,li a{
+    color: var(  --title-color-mobile);
+  }
 }

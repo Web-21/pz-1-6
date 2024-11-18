@@ -1,0 +1,69 @@
+/* Приховати всі зображення для мобільних пристроїв (менше 768px) */
+@media (max-width: 767px) {
+    .app-mobile {
+        display: block;
+    }
+    .app-table {
+        display: none;
+    }
+    .app-desktop {
+        display: none;
+    }
+    h1,h2,li a{
+        color: var(  --title-color-mobile);
+      }
+}
+
+/* Відобразити лише зображення для планшетів (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .app-mobile {
+        display: none;
+    }
+    .app-table {
+        display: block;
+    }
+    .app-desktop {
+        display: none;
+    }
+}
+
+/* Відобразити лише зображення для десктопів (992px і більше) */
+@media (min-width: 992px) {
+    .app-mobile {
+        display: none;
+    }
+    .app-table {
+        display: none;
+    }
+    .app-desktop {
+        display: block;
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+    header > h2 > a {
+      color: var(--title-color-table);
+    }
+    header .app-main-btn {
+      background: var(--button-color-table);
+    }
+    .app-main-wrap {
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    header > h2 > a {
+      color: var(--title-color-desktop);
+    }
+    header .app-main-btn {
+      background: var(--button-color-desktop);
+    }
+    .app-main-wrap {
+      grid-template-columns: 4fr 1fr;
+    }
+  }
+  
