@@ -1,0 +1,28 @@
+/* flex.css */
+body, .app-main-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header, footer {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--header-footer-bg);
+  }
+  
+  .app-main-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .app-main {
+    flex: 3;
+    padding: 15px;
+  }
+  
+  .app-sidebar {
+    flex: 1;
+    padding: 15px;
+    background-color: var(--sidebar-bg);
+  }
+  
