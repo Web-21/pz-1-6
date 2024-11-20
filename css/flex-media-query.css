@@ -1,0 +1,92 @@
+/* flex-media-query.css */
+
+/* Мобільні пристрої (до 576px) */
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+  }
+
+  .app-main-wrap {
+    flex-direction: column;
+  }
+
+  .app-sidebar {
+    width: 100%;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-table {
+    display: none;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: none;
+  }
+}
+
+/* Планшетні пристрої (до 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .app-main-wrap {
+    flex-direction: column;
+  }
+
+  .app-bg-cont .app-table {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: none;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: none;
+  }
+}
+
+/* Десктопи (від 992px і більше) */
+@media (min-width: 992px) {
+  .app-main-wrap {
+    flex-direction: row;
+  }
+
+  .app-main {
+    flex: 3;
+  }
+
+  .app-sidebar {
+    flex: 1;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-table {
+    display: none;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: none;
+  }
+}
+
+/* Великі десктопи (від 1200px і більше) */
+@media (min-width: 1200px) {
+  .app-main-wrap {
+    flex-direction: row;
+  }
+
+  .app-main {
+    flex: 3;
+  }
+
+  .app-sidebar {
+    flex: 1;
+  }
+}
