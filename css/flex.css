@@ -1,0 +1,88 @@
+html {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial;
+    width: 100%;
+}
+
+
+.site-header {
+    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+    height: var(--header-height);
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+body {
+    flex-direction: column;
+    min-height: 100vh
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .header-container>h2 {
+    vertical-align: middle;
+    margin: 0;
+}
+
+header .app-main-btn {
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    text-transform: uppercase;
+    color: white;
+    background: var(--button-color-mobile);
+    height: fit-content;
+}
+
+header nav>ul {
+    display: flex;
+}
+
+header nav>ul>li {
+    margin-left: var(--gutter-width)
+}
+
+.app-main-wrap .app-main {
+    text-align: center;
+    width: 100%;
+}
+
+header .header-container {
+    align-items: baseline;
+    flex-grow: 1;
+}
+
+
+.app-main-wrap {
+    margin: 0 calc(var(--gutter-width) * 2);
+    height: calc(100% - var(--header-height) - var(--footer-height));
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+footer {
+    margin: 0 calc(var(--gutter-width) * 2);
+    height: var(--footer-height);
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.app-main-wrap .app-sidebar {
+    border: 1px solid #000;
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--gutter-width);
+    margin-top: var(--gutter-width);
+}
+
+.app-main-wrap .description {
+    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+}
+
+.app-main-wrap .app-bg-cont img {
+    max-height: 500px;
+    width: 100%;
+}

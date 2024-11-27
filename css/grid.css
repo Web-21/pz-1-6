@@ -2,75 +2,117 @@ html {
     margin: 0;
     font-size: 14px;
     font-family: Arial;
-    /* height: 100%; */
-}
-body {
     height: 100%;
 }
+
+body {
+    display: grid;
+    height: 100%;
+}
+
 header {
     padding: var(--gutter-width) calc(var(--gutter-width) * 2);
     height: var(--header-height);
     box-sizing: border-box;
 }
-header > h2 {
-    float: left;
+
+header>h2 {
     vertical-align: middle;
     margin: 0;
 }
-header > h2 > a{
+
+.grid-header {
+    display: grid;
+    grid-template-areas: 'head nav-text button';
+}
+
+.header-title {
+    grid-area: head;
+}
+
+.header-navigation {
+    grid-area: nav-text;
+}
+
+.grid-item-three {
+    grid-area: button;
+    justify-self: end;
+}
+
+.nav-list {
+    display: grid;
+    grid-template-areas: 'link-one link-two link-three';
+}
+
+.link-one {
+    grid-area: link-one;
+}
+
+.link-two {
+    grid-area: link-two;
+}
+
+.link-three {
+    grid-area: link-three;
+}
+
+header>h2>a {
     color: var(--title-color-mobile);
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
 }
-header > nav {
-    float: left;
+
+header>nav {
     margin-top: 7px;
 }
 
-header .nav-list > li{
-    float: left;
+header .nav-list>li {
     margin-left: var(--gutter-width);
 }
-header .nav-list > li a {
+
+header .nav-list>li a {
     text-decoration: none;
     color: var(--title-color-mobile);
 }
+
 header .app-main-btn {
     border: none;
     padding: calc(var(--gutter-width) / 2) var(--gutter-width);
     background: var(--button-color-mobile);
     color: white;
     text-transform: uppercase;
+    height: fit-content;
 }
-header > .app-main-btn {
-    float: right;
-}
-
-/*main*/
 .app-main-wrap {
     margin: 0 calc(var(--gutter-width) * 2);
     height: calc(100% - var(--header-height) - var(--footer-height));
     box-sizing: border-box;
+    display: grid;
 }
-.app-main-wrap .app-main{
+
+.app-main-wrap .app-main {
     text-align: center;
     width: 100%;
+    grid-area: main;
 }
-.app-main-wrap .app-sidebar{
+
+.app-main-wrap .app-sidebar {
     border: 1px solid #000;
-    float: left;
     width: 100%;
     box-sizing: border-box;
     padding: var(--gutter-width);
     margin-top: var(--gutter-width);
+    grid-area: side;
 }
+
 .app-main-wrap .description {
     margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
 }
-.app-main-wrap .app-bg-cont img{
-  max-height: 500px;
-  width: 100%;
+
+.app-main-wrap .app-bg-cont img {
+    max-height: 500px;
+    width: 100%;
 }
 
 footer {
@@ -80,4 +122,3 @@ footer {
     overflow: auto;
     box-sizing: border-box;
 }
-
