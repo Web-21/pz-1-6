@@ -37,7 +37,7 @@ h2 {
     color: var(--title-color-table);
   }
 
-  header .app-nav-list > li a {
+  header .nav-list > li a {
     color: var(--title-color-table);
   }
 
@@ -80,7 +80,7 @@ h2 {
     color: var(--title-color-desktop);
   }
 
-  header .app-nav-list > li a {
+  header .nav-list > li a {
     text-decoration: none;
     color: var(--title-color-desktop);
   }
