@@ -23,7 +23,7 @@ header>h2 {
 
 .grid-header {
     display: grid;
-    grid-template-areas: 'head nav-text button';
+    grid-template-areas: 'head pau button';
 }
 
 .header-title {
@@ -31,7 +31,7 @@ header>h2 {
 }
 
 .header-navigation {
-    grid-area: nav-text;
+    grid-area: pau;
 }
 
 .grid-item-three {
@@ -41,19 +41,19 @@ header>h2 {
 
 .nav-list {
     display: grid;
-    grid-template-areas: 'link-one link-two link-three';
+    grid-template-areas: 'first second theerd';
 }
 
-.link-one {
-    grid-area: link-one;
+.first {
+    grid-area: first;
 }
 
-.link-two {
-    grid-area: link-two;
+.second {
+    grid-area: second;
 }
 
-.link-three {
-    grid-area: link-three;
+.theerd {
+    grid-area: theerd;
 }
 
 header>h2>a {
