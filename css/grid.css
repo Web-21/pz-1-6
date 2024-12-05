@@ -1,0 +1,129 @@
+html {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    height: 100%;
+}
+
+header {
+    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+    height: var(--header-height);
+    box-sizing: border-box;
+}
+
+header>h2 {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.site-header {
+    display: grid;
+    grid-template-areas: 'head nav-text button';
+}
+
+.header-title {
+    grid-area: head;
+}
+
+.header-nav {
+    grid-area: nav-text;
+}
+
+.header-button {
+    grid-area: button;
+    justify-self: end;
+}
+
+.nav-item nav-item-1 {
+    grid-area: reg-1;
+}
+
+.nav-item nav-item-2 {
+    grid-area: reg-2;
+}
+
+.nav-item nav-item-3 {
+    grid-area: reg-3;
+}
+
+.app-nav-list {
+    display: grid;
+    grid-template-areas: 'reg-1 reg-2 reg-3';
+}
+
+
+
+header>h2>a {
+    color: var(--title-color-mobile);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header>nav {
+    margin-top: 7px;
+}
+
+header .app-nav-list>li {
+    margin-left: var(--gutter-width);
+}
+
+header .app-nav-list>li a {
+    text-decoration: none;
+    color: var(--title-color-mobile);
+}
+
+
+
+.app-main-wrap .app-sidebar {
+    border: 1px solid #000;
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--gutter-width);
+    margin-top: var(--gutter-width);
+    grid-area: side;
+}
+
+header .app-main-btn {
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+    height: fit-content;
+}
+
+.app-main-wrap {
+    margin: 0 calc(var(--gutter-width) * 2);
+    height: calc(100% - var(--header-height) - var(--footer-height));
+    box-sizing: border-box;
+    display: grid;
+}
+
+.app-main-wrap .app-main {
+    text-align: center;
+    width: 100%;
+    grid-area: main;
+}
+
+.app-main-wrap .description {
+    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+}
+
+.app-main-wrap .background-container img {
+    max-height: 500px;
+    width: 100%;
+}
+
+footer {
+    margin: 0 calc(var(--gutter-width) * 2);
+    height: var(--footer-height);
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+}
