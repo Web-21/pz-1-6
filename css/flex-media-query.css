@@ -1,0 +1,81 @@
+.app-main-btn {
+    margin-left: 70%;
+    background: var(--button-color-mobile);
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    a {
+        color: var(--title-color-mobile);
+    }
+
+    .app-nav-list {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .app-main-btn {
+        margin-left: 70%;
+        background: var(--button-color-mobile);
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    header .app-main-btn {
+        background-color: var(--button-color-table);
+    }
+
+    header > .app-nav-and-header > h2 > a {
+        color: var(--title-color-table);
+    }
+
+    .app-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .app-nav-and-header {
+        display: flex;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .app-main-wrap .app-main {
+        width: calc(75% - var(--gutter-width));
+        height: 100%;
+        margin: 0 var(--gutter-width) 0 0;
+
+    }
+
+    .app-main-wrap .app-sidebar {
+        width: calc(25% - var(--gutter-width));
+        margin: 0 0 0 var(--gutter-width);
+    }
+
+    .app-main-wrap {
+        display: flex;
+    }
+
+    .app-nav-and-header {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .app-nav-list {
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+    }
+
+    header .app-main-btn {
+        background-color: var(--button-color-desktop);
+    }
+
+    header .app-nav-and-header > h2 > a {
+        color: var(--title-color-desktop);
+    }
+}
