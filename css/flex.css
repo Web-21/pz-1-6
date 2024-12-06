@@ -1,57 +1,63 @@
+/* ###################################################################### */
+/* header */
 html {
     margin: 0;
     font-size: 14px;
     font-family: Arial;
-    /* height: 100%; */
+    width: 100%;
 }
+
 body {
-    height: 100%;
+    flex-direction: column;
+    min-height: 100vh
 }
-header {
+
+.app-header {
     padding: var(--gutter-width) calc(var(--gutter-width) * 2);
     height: var(--header-height);
     box-sizing: border-box;
-}
-header > h2 {
-    float: left;
-    vertical-align: middle;
-    margin: 0;
-}
-header > h2 > a{
-    color: var(--title-color-mobile);
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-}
-header > nav {
-    float: left;
-    margin-top: 7px;
+    flex-grow: 1;
 }
 
-header .app-nav-list > li{
-    float: left;
-    margin-left: var(--gutter-width);
-}
-header .app-nav-list > li a {
+header a {
     text-decoration: none;
-    color: var(--title-color-mobile);
 }
+
+header .app-nav-and-header>h2 {
+    margin: 0;
+}
+
+
+header nav>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav>ul>li {
+    margin-left: var(--gutter-width)
+}
+
+header .app-nav-and-header {
+    align-items: baseline;
+    flex-grow: 1;
+}
+
 header .app-main-btn {
     border: none;
     padding: calc(var(--gutter-width) / 2) var(--gutter-width);
-    background: var(--button-color-mobile);
-    color: white;
     text-transform: uppercase;
-}
-header > .app-main-btn {
-    float: right;
+    color: white;
+    height: fit-content;
 }
 
-/*main*/
+/* ##################################################################### */
+/* main */
+
 .app-main-wrap {
     margin: 0 calc(var(--gutter-width) * 2);
     height: calc(100% - var(--header-height) - var(--footer-height));
     box-sizing: border-box;
+    flex-grow: 1;
 }
 .app-main-wrap .app-main{
     text-align: center;
@@ -59,7 +65,6 @@ header > .app-main-btn {
 }
 .app-main-wrap .app-sidebar{
     border: 1px solid #000;
-    float: left;
     width: 100%;
     box-sizing: border-box;
     padding: var(--gutter-width);
@@ -72,7 +77,6 @@ header > .app-main-btn {
   max-height: 500px;
   width: 100%;
 }
-
 footer {
     margin: 0 calc(var(--gutter-width) * 2);
     height: var(--footer-height);
@@ -80,4 +84,3 @@ footer {
     overflow: auto;
     box-sizing: border-box;
 }
-
