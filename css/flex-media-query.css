@@ -1,0 +1,68 @@
+
+@media (min-width: 768px) {
+  .content-container {
+    flex-direction: row;
+  }
+
+  header h2, footer h2 {
+    font-size: 1.8rem;
+  }
+
+  .main-btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  }
+
+  /* Відображення планшетного зображення */
+  .image-container .mobile-view {
+    display: none;
+  }
+
+  .image-container .tablet-view {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-container .desktop-view {
+    display: none;
+  }
+}
+
+/* Додаткові зміни при ширині 992px */
+@media (min-width: 992px) {
+  header h2, footer h2 {
+    font-size: 2.2rem;
+  }
+
+  .main-btn {
+    padding: 12px 28px;
+    font-size: 1.3rem;
+  }
+
+  /* Відображення десктопного зображення */
+  .image-container .mobile-view,
+  .image-container .tablet-view {
+    display: none;
+  }
+
+  .image-container .desktop-view {
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Вузькі екрани (до 768px) - за замовчуванням */
+.image-container .tablet-view,
+.image-container .desktop-view {
+  display: none;
+}
+
+.image-container .mobile-view {
+  display: block;
+  width: 100%;
+  height: auto;
+}

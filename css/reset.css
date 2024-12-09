@@ -1,43 +1,51 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+/* Скидання стилів для базового вигляду */
+html, body, div, span, iframe, applet, object,
+h1, h2, h3, h4, h5, h6, p, pre, blockquote,
+a, abbr, acronym, address, cite, code, big,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+small, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, form, fieldset,
+legend, label, table, caption, tbody, thead,
+tfoot, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
+  border: none;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+/* Відображення елементів HTML5 для застарілих браузерів */
+article, aside, figure, figcaption,
+footer, header, hgroup, menu, nav, section, details {
   display: block;
 }
+
+/* Базові стилі для тіла */
 body {
-  line-height: 1;
   margin: 0;
+  line-height: 1.5;
 }
+
+/* Скидання списків */
 ol, ul {
-  list-style: none;
+  list-style-type: none;
 }
+
+/* Скидання цитат */
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+  content: "";
 }
+
+/* Таблиці */
 table {
   border-collapse: collapse;
   border-spacing: 0;

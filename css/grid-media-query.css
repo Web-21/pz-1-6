@@ -1,0 +1,132 @@
+
+@media (min-width: 500px) {
+  
+  header h2 {
+    color: red; 
+  }
+  .primary-button {
+    background-color: blue; 
+  }
+
+  .navigation-list a {
+    color: red 
+  }
+}
+
+
+/* Середні пристрої (планшети, від 768px) */
+@media (min-width: 768px) {
+  .main-content-wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+  .background-images .mobile-image {
+    display: none;
+  }
+
+  .background-images .tablet-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .background-images .desktop-image {
+    display: none;
+  }
+
+ 
+  header .primary-button {
+    background-color: brown !important;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+ 
+  .navigation-list a {
+    color: green !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+/* Великі пристрої (десктопи, від 992px) */
+@media (min-width: 992px) {
+  .main-content-wrapper {
+    grid-template-columns: 3fr 1fr;
+    gap: var(--spacing);
+  }
+
+  .main-section,
+  .sidebar {
+    align-self: flex-start;
+    height: 100%;
+  }
+  .background-images .mobile-image,
+  .background-images .tablet-image {
+    display: none;
+  }
+
+  .background-images .desktop-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Зміна кольору кнопки для десктопів */
+  header .primary-button {
+    background-color: red !important;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+ 
+  .navigation-list a {
+    color: blue !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+/* Дуже великі пристрої (широкоформатні десктопи, від 1200px) */
+@media (min-width: 1200px) {
+  .main-content-wrapper {
+    grid-template-columns: 4fr 1fr;
+  }
+  .background-images .mobile-image,
+  .background-images .tablet-image {
+    display: none;
+  }
+
+  .background-images .desktop-image {
+    display: block;
+  }
+
+  
+  header .primary-button {
+    background-color: var(--large-desktop-button-color);
+    transition: background-color 0.3s ease-in-out;
+  }
+  .navigation-list a {
+    color:red;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+  }
+}
+.background-images .mobile-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.background-images .tablet-image,
+.background-images .desktop-image {
+  display: none;
+}
+header .primary-button {
+  background-color: var(--mobile-button-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navigation-list a {
+  color: red;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+

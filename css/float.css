@@ -6,16 +6,28 @@ html {
 }
 body {
     height: 100%;
+    margin: 0;
 }
-header {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content {
+    flex: 1;
+}
+
+header,footer{
     padding: var(--gutter-width) calc(var(--gutter-width) * 2);
     height: var(--header-height);
     box-sizing: border-box;
+    text-align: center;
+    overflow: auto;
 }
 header > h2 {
     float: left;
     vertical-align: middle;
-    margin: 0;
+    margin: 3px;
 }
 header > h2 > a{
     color: var(--title-color-mobile);
@@ -52,18 +64,21 @@ header > .app-main-btn {
     margin: 0 calc(var(--gutter-width) * 2);
     height: calc(100% - var(--header-height) - var(--footer-height));
     box-sizing: border-box;
+    gap: var(--gutter-width);
+    flex: 1;
+    display: flex;
 }
 .app-main-wrap .app-main{
     text-align: center;
     width: 100%;
+    flex: 3;
 }
 .app-main-wrap .app-sidebar{
+    flex: 1; /* Бокова панель займає менше простору */
     border: 1px solid #000;
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
     padding: var(--gutter-width);
     margin-top: var(--gutter-width);
+    box-sizing: border-box;
 }
 .app-main-wrap .desc {
     margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
@@ -74,8 +89,4 @@ header > .app-main-btn {
 footer {
     margin: 0 calc(var(--gutter-width) * 2);
     height: var(--footer-height);
-    text-align: center;
-    overflow: auto;
-    box-sizing: border-box;
 }
-
