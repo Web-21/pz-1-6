@@ -1,13 +1,17 @@
+/* Змінні для проекту */
 :root {
-  --title-color-mobile: red;
-  --title-color-table: green;
-  --title-color-desktop: blue;
+  /* Кольори заголовків */
+  --mobile-title-color: red;
+  --tablet-title-color: green;
+  --desktop-title-color: blue;
 
-  --button-color-mobile: blue;
-  --button-color-table: brown;
-  --button-color-desktop: red;
+  /* Кольори кнопок */
+  --mobile-button-color: blue;
+  --tablet-button-color: brown;
+  --desktop-button-color: red;
 
-  --gutter-width: 20px;
-  --header-height: 100px;
-  --footer-height: 100px;
+  /* Розміри */
+  --spacing: 20px;
+  --header-size: 100px;
+  --footer-size: 100px;
 }

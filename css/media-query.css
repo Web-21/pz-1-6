@@ -1,99 +1,97 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap*/
-/*utils*/
+/* Найменші пристрої (портретні телефони, менше 576px) */
+/* Немає медіа-запиту для `xs`, оскільки це значення за замовчуванням */
+/* Утиліти */
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
-  color: var(--title-color-mobile);
-  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+  color: var(--mobile-title-color);
+  margin: calc(var(--spacing) / 2) 0 var(--spacing);
 }
 
 h2 {
-  font-size: 24px;
-  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+  font-size: 1.5rem;
   font-weight: bold;
-  color: var(--title-color-mobile);
+  color: var(--mobile-title-color);
+  margin: calc(var(--spacing) / 2) 0 var(--spacing);
 }
 
 .clearfix::after {
   content: "";
-  clear: both;
   display: table;
+  clear: both;
 }
 
-
-.app-table, .app-desktop {
+.tablet-view, .desktop-view {
   display: none;
 }
 
-/*Small devices (landscape phones, 576px and up)*/
+/* Маленькі пристрої (телефони в альбомній орієнтації, від 576px) */
 @media (min-width: 576px) {
 
 }
 
-/*Medium devices (tablets, 768px and up)*/
+/* Середні пристрої (планшети, від 768px) */
 @media (min-width: 768px) {
   header > h2 > a {
-    color: var(--title-color-table);
+    color: var(--tablet-title-color);
   }
 
-  header .app-nav-list > li a {
-    color: var(--title-color-table);
+  header .navigation > li a {
+    color: var(--tablet-title-color);
   }
 
-  header .app-main-btn {
-    background: var(--button-color-table);
+  header .main-btn {
+    background: brown;
   }
 
   h1 {
-    color: var(--title-color-table);
+    color: var(--tablet-title-color);
   }
 
   h2 {
-    color: var(--title-color-table);
+    color: var(--tablet-title-color);
   }
 
-  .app-mobile {
+  .mobile-view {
     display: none;
   }
 
-  .app-table {
-    display: inline;
+  .tablet-view {
+    display: block;
   }
-
 }
 
-/*Large devices (desktops, 992px and up)*/
+/* Великі пристрої (десктопи, від 992px) */
 @media (min-width: 992px) {
-  .app-table {
+  .tablet-view {
     display: none;
   }
 
-  .app-desktop {
-    display: inline;
+  .desktop-view {
+    display: block;
   }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
+/* Дуже великі пристрої (широкоформатні десктопи, від 1200px) */
 @media (min-width: 1200px) {
   header > h2 > a {
-    color: var(--title-color-desktop);
+    color: var(--desktop-title-color);
   }
 
-  header .app-nav-list > li a {
+  header .navigation > li a {
+    color: var(--desktop-title-color);
     text-decoration: none;
-    color: var(--title-color-desktop);
   }
 
-  header .app-main-btn {
-    background: var(--button-color-desktop);
+  header .main-btn {
+    background: var(--desktop-button-color);
   }
 
   h1 {
-    color: var(--title-color-desktop);
+    color: var(--desktop-title-color);
   }
 
   h2 {
-    color: var(--title-color-desktop);
+    color: var(--desktop-title-color);
   }
 }
