@@ -1,0 +1,41 @@
+/* flex-media-query.css */
+
+/* Мобильная версия */
+@media (max-width: 600px) {
+    .app-main-wrap {
+      flex-direction: column;
+    }
+    .app-sidebar {
+      display: none;
+    }
+    .app-bg-cont .app-mobile {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  /* Планшетная версия */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .app-main-wrap {
+      flex-direction: column;
+    }
+    .app-bg-cont .app-table {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  /* Десктопная версия */
+  @media (min-width: 1025px) {
+    .app-main-wrap {
+      flex-direction: row;
+    }
+    .app-sidebar {
+      display: block;
+    }
+    .app-bg-cont .app-desktop {
+      display: block;
+      width: 100%;
+    }
+  }
+  
