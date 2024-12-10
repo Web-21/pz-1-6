@@ -1,0 +1,118 @@
+html {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial;
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+    height: var(--header-height);
+    box-sizing: border-box;
+  }
+  header > h2 {
+    display: flex;
+    vertical-align: middle;
+    margin: 0;
+  }
+  header > h2 > a {
+    color: var(--title-color-mobile);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  header > nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+  
+    margin-top: 7px;
+  }
+  header .app-nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header .app-nav-list > li {
+    display: flex;
+    margin-left: var(--gutter-width);
+  }
+  header .app-nav-list > li a {
+    text-decoration: none;
+    color: var(--title-color-mobile);
+  }
+  header .app-main-btn {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+    margin-left: auto; 
+  }
+  header > .app-main-btn {
+    display: flex;
+  }
+  
+  /*main*/
+  .app-main-wrap {
+    display: flex;
+    flex-direction: row;
+    margin: 0 calc(var(--gutter-width) * 2);
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    box-sizing: border-box;
+  }
+  .app-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+  }
+  .app-sidebar {
+    display: flex;
+  }
+  .app-main-wrap .app-main {
+    text-align: center;
+    width: 100%;
+  }
+  .app-main-wrap .app-sidebar {
+    border: 1px solid #000;
+    display: flex;
+  
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--gutter-width);
+    margin-top: var(--gutter-width);
+  }
+  .app-main-wrap .desc {
+    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+  }
+  .app-main-wrap {
+    display: flex;
+  }
+  
+  .app-bg-cont {
+    flex: 1;
+    position: relative;
+  }
+  .app-bg-cont img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  footer {
+    margin: 0 calc(var(--gutter-width) * 2);
+    height: var(--footer-height);
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+  }
