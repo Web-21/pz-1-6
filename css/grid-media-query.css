@@ -1,0 +1,108 @@
+<<<<<<< HEAD
+@media only screen and (max-width: 450px) {
+    
+
+  .iav_container {
+      padding: 0 20px;
+      height: calc(100vh - var(--header-height) - var(--gutter-width)* 4);
+  }
+
+  .iav_main {
+      grid-template-columns: 3fr;
+  }
+
+  .iav_section {
+      padding: 0 20px;
+  }
+
+  .iav_sidebar {
+      margin: 0 20px;
+      padding: 10px;
+      height: auto;
+      grid-column: 1 / 2;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+  .iav_container {
+      height: calc(100vh - var(--header-height) - var(--gutter-width)* 4);
+  }
+}
+=======
+/* grid-media-query.css */
+
+/* Мобільні пристрої (до 576px) */
+@media (max-width: 576px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .app-sidebar {
+    display: none;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-table {
+    display: none;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: none;
+  }
+}
+
+/* Планшетні пристрої (до 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .app-bg-cont .app-table {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: none;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: none;
+  }
+}
+
+/* Десктопи (від 992px і більше) */
+@media (min-width: 992px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .app-sidebar {
+    display: block;
+  }
+
+  .app-bg-cont .app-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .app-bg-cont .app-table {
+    display: none;
+  }
+
+  .app-bg-cont .app-mobile {
+    display: none;
+  }
+}
+
+/* Великі десктопи (від 1200px і більше) */
+@media (min-width: 1200px) {
+  .app-main-wrap {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15

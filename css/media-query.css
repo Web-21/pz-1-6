@@ -1,6 +1,9 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap*/
-/*utils*/
+<<<<<<< HEAD
+@media only screen and (max-width: 450px) {
+  .iav_header {
+      color: var(--title-color-mobile);
+=======
+
 h1 {
   font-size: 32px;
   font-weight: bold;
@@ -26,44 +29,57 @@ h2 {
   display: none;
 }
 
-/*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+  
 }
 
-/*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   header > h2 > a {
     color: var(--title-color-table);
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
   }
 
-  header .app-nav-list > li a {
-    color: var(--title-color-table);
+  .iav_header  h1 {
+      font-size: 24px;
+      margin: 7px 0 0 0;
   }
 
-  header .app-main-btn {
-    background: var(--button-color-table);
+  .iav_ulist > li > a {
+      color: var(--title-color-mobile);
+      font-size: 14px;
   }
 
-  h1 {
-    color: var(--title-color-table);
+  .iav_header button {  
+      background-color: var(--button-color-mobile);
+      font-size: 16px;
+      padding: 7px 9px;
   }
 
-  h2 {
-    color: var(--title-color-table);
+  h2{
+      color: var(--title-color-mobile);
+      font-size: 20px;
   }
 
-  .app-mobile {
-    display: none;
+  .iav_description {
+      font-size: small;
   }
 
-  .app-table {
-    display: inline;
+  #iav_img_1, #iav_img_2 {
+      display: none;
   }
 
+<<<<<<< HEAD
+  #iav_img_3 {
+      display: block;
+  }
 }
 
-/*Large devices (desktops, 992px and up)*/
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+  .iav_header {
+      color: var(--title-color-table);
+=======
+}
+
 @media (min-width: 992px) {
   .app-table {
     display: none;
@@ -74,26 +90,48 @@ h2 {
   }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   header > h2 > a {
     color: var(--title-color-desktop);
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
   }
 
-  header .app-nav-list > li a {
-    text-decoration: none;
-    color: var(--title-color-desktop);
+  .iav_header  h1 {
+      font-size: 26px;
+      margin: 7px 0 0 0;
+      color: var(--title-color-table);
   }
 
-  header .app-main-btn {
-    background: var(--button-color-desktop);
+  .iav_ulist > li > a {
+      color: var(--title-color-table);
+      font-size: medium;
   }
 
-  h1 {
-    color: var(--title-color-desktop);
+  .iav_header button {  
+      background-color: var(--button-color-table);
   }
 
-  h2 {
-    color: var(--title-color-desktop);
+  h2{
+      color: var(--title-color-table);
+      font-size: 20px;
   }
+<<<<<<< HEAD
+
+  .iav_header button {
+      font-size: 16px;
+  }
+
+  .iav_description {
+      font-size: medium;
+  }
+
+  #iav_img_2 {
+      display: block;
+  }
+
+  #iav_img_1, #iav_img_3 {
+      display: none;
+  }
+=======
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
 }

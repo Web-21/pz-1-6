@@ -1,81 +1,125 @@
-html {
-    margin: 0;
-    font-size: 14px;
-    font-family: Arial;
+html, body {
     height: 100%;
+    overflow: hidden;
 }
-body {
-    height: 100%;
+
+.iav_header > * {
+    float: left;
 }
-header {
-    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+
+.iav_header {
+    color: var(--title-color-desktop);
+    padding: 15px 25px 0 25px;
     height: var(--header-height);
-    box-sizing: border-box;
 }
-header > h2 {
-    float: left;
-    vertical-align: middle;
-    margin: 0;
-}
-header > h2 > a{
-    color: var(--title-color-mobile);
+
+.iav_nav {
+    margin: 7px 0 0 10px;
     font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-}
-header > nav {
-    float: left;
-    margin-top: 7px;
 }
 
-header .app-nav-list > li{
+.iav_ulist > li {
     float: left;
-    margin-left: var(--gutter-width);
 }
-header .app-nav-list > li a {
-    text-decoration: none;
-    color: var(--title-color-mobile);
+.iav_ulist > li > a {
+    color: var(--title-color-desktop);
+    margin-right: 10px;
 }
-header .app-main-btn {
-    border: none;
-    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
-    background: var(--button-color-mobile);
-    color: white;
-    text-transform: uppercase;
+
+.iav_header  h1 {
+    font-size: xx-large;
+    font-weight: bolder;
 }
-header > .app-main-btn {
+
+.iav_header button {    
     float: right;
+    border: none;
+    padding: 10px 15px;
+    font-size: larger;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--button-color-desktop);
+    cursor: pointer;
 }
 
-/*main*/
-.app-main-wrap {
-    margin: 0 calc(var(--gutter-width) * 2);
+.iav_container {
+    margin: 10px 25px;
     height: calc(100% - var(--header-height) - var(--footer-height));
     box-sizing: border-box;
 }
-.app-main-wrap .app-main{
+
+.iav_main {
+    height: calc(100% - var(--gutter-width)/2);
     text-align: center;
     width: 100%;
+<<<<<<< HEAD
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.iav_section {
+    float: left;
+    width: 80%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    max-height: calc(100%  - var(--gutter-width)*2);
+}
+
+h2{
+    font-size: xx-large;
+    color: var(--title-color-desktop);
+    font-weight: bold;
+}
+
+.iav_description {
+    margin: 10px 0;
+}
+
+.iav_sidebar {
+    float: right;
+    border: 1px solid #000;
+=======
+    height: calc(100vh-(var(--footer-height)+var(--header-height)));
 }
 .app-main-wrap .app-sidebar{
     border: 1px solid #000;
-    float: left;
     width: 100%;
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
     box-sizing: border-box;
     padding: var(--gutter-width);
-    margin-top: var(--gutter-width);
+    margin-left: var(--gutter-width);
+    width: 15%;
+    height: 100%;
 }
+<<<<<<< HEAD
+
+.iav_img_container img {
+    width: 100%;
+    max-height: 800px;
+}
+
+#iav_img_2, #iav_img_3 {
+    display: none;
+}
+
+=======
 .app-main-wrap .desc {
     margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
 }
-.app-main-wrap .app-bg-cont img{
-    width: 100%;
-}
+.app-main-wrap .app-bg-cont img {
+    width: 75%;
+    height: 75%;
+    overflow: auto;
+  }
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
 footer {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: var(--footer-height);
+    margin: 15px calc(var(--gutter-width) * 2);
+    height: calc(var(--footer-height) - var(--gutter-width));
     text-align: center;
     overflow: auto;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
-
+=======
+}
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
