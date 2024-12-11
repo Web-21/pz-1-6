@@ -1,0 +1,28 @@
+@media only screen and (max-width: 500px) {
+  .iav_main {
+      flex-direction: column;
+      margin: 52px 22px;
+  }
+
+  .iav_section {
+      width: 91%;
+      padding: 0 22px;
+  }
+
+  .iav_sidebar {
+      width: 87%;
+      margin: 10px 20px;
+      padding: 10px;
+      height: auto;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+  .iav_section {
+      width: 80%;
+  }
+
+  .iav_sidebar{
+      width: 29%;
+  }
+}

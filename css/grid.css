@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, .iav_container, footer {
+  display: grid;
+}
+
+header {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0 10px;
+  height: calc(var(--header-height) - var(--gutter-width));
+}
+
+header h1 {
+  grid-column: 1 / 2;
+  color: var(--title-color-desktop);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+nav {
+  grid-column: 2 / 3;
+  margin: 5px 0 0 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  display: inline-block; 
+}
+
+nav ul li a {
+  display: inline-block; 
+  color: var(--title-color-desktop);
+  padding: 5px 5px; 
+}
+
+button {
+  grid-column: 3 / 4;
+  border: none;
+  padding: 10px 20px;
+  font-size: larger;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--button-color-desktop);
+  cursor: pointer;
+}
+
+.iav_container {
+  padding: 20px 20px 0 20px;
+  height: calc(100vh - var(--header-height) - var(--gutter-width)*4);
+  overflow: hidden;
+}
+
+.iav_main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  height: calc(100% - var(--gutter-width)*2);
+}
+
+.iav_section {
+  padding: 10px;
+  text-align: center;
+  max-height: calc(100%  - var(--gutter-width)*2);
+}
+
+.iav_section h2 {
+  grid-row: 1;
+}
+
+h2 {
+  font-size: xx-large;
+  color: var(--title-color-desktop);
+  font-weight: bold;
+}
+
+.iav_description {
+  grid-row: 2;
+  margin: 15px 0;
+}
+
+.iav_img_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.iav_img_container img {
+  width: 100%;
+  display: block;
+  max-height: 61vh;
+}
+
+#iav_img_2, #iav_img_3 {
+  display: none;
+}
+
+.iav_sidebar {
+  padding: 10px 10px 0 10px;
+  display: grid;
+  grid-column: 2 / 2;
+  border: 1px solid #000;
+  max-height: 74vh;
+}
+
+footer {
+  margin: 0 calc(var(--gutter-width) * 2);
+  height: calc(var(--footer-height) - var(--gutter-width));
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+footer h2 {
+  grid-row: 1;
+}
+
+footer p {
+  grid-row: 2;
+}
