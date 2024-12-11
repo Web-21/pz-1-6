@@ -1,0 +1,11 @@
+:root {
+  --title-color-mobile: red;
+  --title-color-table: green;
+  --title-color-desktop: blue;
+  --button-color-table: brown;
+  --button-color-desktop: red;
+  --button-color-mobile: blue;
+  --gutter-width: 20px;
+  --header-height: 100px;
+  --footer-height: 100px;
+}
