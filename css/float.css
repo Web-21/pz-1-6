@@ -1,81 +1,102 @@
-html {
-    margin: 0;
-    font-size: 14px;
-    font-family: Arial;
+html, body {
     height: 100%;
+    overflow: hidden;
 }
-body {
-    height: 100%;
+
+.header-area > * {
+    float: left;
 }
-header {
-    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+
+.header-area {
+    color: var(--desktop-title-color);
+    padding: 20px 30px 0 30px;
     height: var(--header-height);
-    box-sizing: border-box;
 }
-header > h2 {
+
+.nav-menu {
+    margin: 8px 0 0 12px;
+    font-size: 1.5rem;
+}
+
+.nav-list > li {
     float: left;
-    vertical-align: middle;
-    margin: 0;
 }
-header > h2 > a{
-    color: var(--title-color-mobile);
-    font-size: 24px;
+.nav-list > li > a {
+    color: var(--desktop-title-color);
+    margin-right: 12px;
+}
+
+.header-area h1 {
+    font-size: 2rem;
     font-weight: bold;
-    text-decoration: none;
-}
-header > nav {
-    float: left;
-    margin-top: 7px;
 }
 
-header .app-nav-list > li{
-    float: left;
-    margin-left: var(--gutter-width);
-}
-header .app-nav-list > li a {
-    text-decoration: none;
-    color: var(--title-color-mobile);
-}
-header .app-main-btn {
-    border: none;
-    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
-    background: var(--button-color-mobile);
-    color: white;
-    text-transform: uppercase;
-}
-header > .app-main-btn {
+.header-area button {    
     float: right;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--desktop-button-color);
+    cursor: pointer;
 }
 
-/*main*/
-.app-main-wrap {
-    margin: 0 calc(var(--gutter-width) * 2);
+.content-wrapper {
+    margin: 12px 30px;
     height: calc(100% - var(--header-height) - var(--footer-height));
     box-sizing: border-box;
 }
-.app-main-wrap .app-main{
+
+.main-content {
+    height: calc(100% - var(--spacing)/2);
     text-align: center;
     width: 100%;
-}
-.app-main-wrap .app-sidebar{
-    border: 1px solid #000;
-    float: left;
-    width: 100%;
     box-sizing: border-box;
-    padding: var(--gutter-width);
-    margin-top: var(--gutter-width);
+    overflow: hidden;
 }
-.app-main-wrap .desc {
-    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+
+.content-section {
+    float: left;
+    width: 78%;
+    padding-right: 18px;
+    box-sizing: border-box;
+    max-height: calc(100% - var(--spacing)*2);
 }
-.app-main-wrap .app-bg-cont img{
+
+h2 {
+    font-size: 2rem;
+    color: var(--desktop-title-color);
+    font-weight: 700;
+}
+
+.text-block {
+    margin: 12px 0;
+}
+
+.sidebar {
+    float: right;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    padding: var(--spacing);
+    margin-left: var(--spacing);
+    width: 18%;
+    height: 100%;
+}
+
+.image-gallery img {
     width: 100%;
+    max-height: 780px;
 }
+
+#tablet-img, #mobile-img {
+    display: none;
+}
+
 footer {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: var(--footer-height);
+    margin: 18px calc(var(--spacing) * 2);
+    height: calc(var(--footer-height) - var(--spacing));
     text-align: center;
     overflow: auto;
     box-sizing: border-box;
 }
-

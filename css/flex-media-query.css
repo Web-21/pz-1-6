@@ -1,0 +1,28 @@
+@media only screen and (max-width: 450px) {
+    .main-area {
+        flex-direction: column;
+        margin: 40px 15px;
+    }
+
+    .content-section {
+        width: 88%;
+        padding: 0 15px;
+    }
+
+    .side-section {
+        width: 80%;
+        margin: 12px 15px;
+        padding: 12px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    .content-section {
+        width: 68%;
+    }
+
+    .side-section {
+        width: 28%;
+    }
+}
