@@ -1,0 +1,28 @@
+@media only screen and (max-width: 450px) {
+
+    .content-wrapper {
+        padding: 0 18px;
+        height: calc(100vh - var(--header-height) - var(--spacing) * 4);
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 0 18px;
+    }
+
+    .sidebar {
+        margin: 0 18px;
+        padding: 12px;
+        height: auto;
+        grid-column: 1 / 2;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    .content-wrapper {
+        height: calc(100vh - var(--header-height) - var(--spacing) * 4);
+    }
+}

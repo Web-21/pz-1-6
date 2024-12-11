@@ -1,3 +1,4 @@
+/* Скидання стилів для кросбраузерної сумісності */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,31 +15,47 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  font: 100%/1.5 Arial, sans-serif;
   vertical-align: baseline;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
+
+/* Відображення HTML5-елементів як блокових */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
+/* Базові стилі для тіла */
 body {
-  line-height: 1;
+  line-height: 1.6;
   margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+/* Скидання списків */
 ol, ul {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+/* Скидання стилів цитат */
 blockquote, q {
   quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
+  display: none;
 }
+
+/* Таблиці */
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
+  width: 100%;
 }
