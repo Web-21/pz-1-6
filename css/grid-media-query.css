@@ -32,31 +32,97 @@
     .app-sidebar {
         grid-column: 2/3;
     }
+
+    header a {
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+    }
+
+    .app-main-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 25px;
+        font-size: 1rem;
+        background-color: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
     .app-main-wrap {
-        grid-template-columns: 75% 25%;
-        grid-column-gap: 30px;
-        grid-template-areas: 'main side';
+        display: grid;
+        grid-template-columns: 70%;
+        grid-gap: 20px;
+        padding: 20px;
+        align-items: start;
     }
 
-    .grid-header {
-        grid-template-columns: 7% 24% 1fr;
-    }
-
-    .app-nav-list {
-        grid-template-columns: 27% 27% 27%;
-    }
-
-    .app-main-wrap {
-        grid-template-columns: 4fr 1fr;
+    .app-main {
+        grid-column: 1;
     }
 
     .app-sidebar {
-        grid-column: 2/3;
+        grid-column: 2;
+        padding: 20px;
+        border: 1px solid #000;
+        font-size: 1.1rem;
+    }
+
+    .desc {
+        margin-bottom: 30px;
+    }
+
+    .app-bg-cont img {
+        width: 100%;
+        height: auto;
+    }
+
+    .app-nav-list {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .app-nav-list li a {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
     }
 }
+
+
 
 @media (min-width: 768px) {
     .app-main-wrap {
@@ -83,5 +149,10 @@
         grid-template-areas: 'head . .'
             'nav-text nav-text nav-text'
             '. . button';
+    }
+    
+    header a {
+        text-decoration: none;
+        font-weight: bold;
     }
 }

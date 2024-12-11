@@ -164,11 +164,6 @@ footer p {
         margin: 0 var(--gutter-width) 0 0;
     }
 
-    .app-main-wrap .app-sidebar {
-        width: calc(25% - var(--gutter-width));
-        margin: 0 0 0 var(--gutter-width);
-    }
-
     .app-main-wrap {
         display: flex;
     }
