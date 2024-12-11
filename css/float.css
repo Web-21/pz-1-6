@@ -52,6 +52,7 @@ html, body {
     height: calc(100% - var(--gutter-width)/2);
     text-align: center;
     width: 100%;
+<<<<<<< HEAD
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -77,12 +78,20 @@ h2{
 .iav_sidebar {
     float: right;
     border: 1px solid #000;
+=======
+    height: calc(100vh-(var(--footer-height)+var(--header-height)));
+}
+.app-main-wrap .app-sidebar{
+    border: 1px solid #000;
+    width: 100%;
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
     box-sizing: border-box;
     padding: var(--gutter-width);
     margin-left: var(--gutter-width);
     width: 15%;
     height: 100%;
 }
+<<<<<<< HEAD
 
 .iav_img_container img {
     width: 100%;
@@ -93,10 +102,24 @@ h2{
     display: none;
 }
 
+=======
+.app-main-wrap .desc {
+    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+}
+.app-main-wrap .app-bg-cont img {
+    width: 75%;
+    height: 75%;
+    overflow: auto;
+  }
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
 footer {
     margin: 15px calc(var(--gutter-width) * 2);
     height: calc(var(--footer-height) - var(--gutter-width));
     text-align: center;
     overflow: auto;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15

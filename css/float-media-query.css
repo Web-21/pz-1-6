@@ -1,7 +1,25 @@
+<<<<<<< HEAD
 @media only screen and (max-width: 450px) {
   .iav_header {
       color: var(--title-color-mobile);
       height: calc(var(--header-height) - var(--gutter-width));
+=======
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+  .app-main-wrap .app-main{
+    float: left;
+    width: calc(75% - var(--gutter-width));
+    height: 100%;
+    margin:0 var(--gutter-width) 0 0;
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
   }
 
   .iav_section {
@@ -19,10 +37,14 @@
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 451px) and (max-width: 1024px) {
   .iav_section {
       width: 70%;
   }
+=======
+@media (min-width: 1200px) {
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
 
   .iav_sidebar{
       width: 25%;

@@ -1,6 +1,42 @@
+<<<<<<< HEAD
 @media only screen and (max-width: 450px) {
   .iav_header {
       color: var(--title-color-mobile);
+=======
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--title-color-mobile);
+  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+}
+
+h2 {
+  font-size: 24px;
+  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+  font-weight: bold;
+  color: var(--title-color-mobile);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.app-table, .app-desktop {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  
+}
+
+@media (min-width: 768px) {
+  header > h2 > a {
+    color: var(--title-color-table);
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
   }
 
   .iav_header  h1 {
@@ -32,6 +68,7 @@
       display: none;
   }
 
+<<<<<<< HEAD
   #iav_img_3 {
       display: block;
   }
@@ -40,6 +77,23 @@
 @media only screen and (min-width: 451px) and (max-width: 1024px) {
   .iav_header {
       color: var(--title-color-table);
+=======
+}
+
+@media (min-width: 992px) {
+  .app-table {
+    display: none;
+  }
+
+  .app-desktop {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  header > h2 > a {
+    color: var(--title-color-desktop);
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
   }
 
   .iav_header  h1 {
@@ -61,6 +115,7 @@
       color: var(--title-color-table);
       font-size: 20px;
   }
+<<<<<<< HEAD
 
   .iav_header button {
       font-size: 16px;
@@ -77,4 +132,6 @@
   #iav_img_1, #iav_img_3 {
       display: none;
   }
+=======
+>>>>>>> bbfa9bc971d4c75789c72b084b4656009bc39b15
 }
