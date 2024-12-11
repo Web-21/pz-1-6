@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 14px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%);
+}
+
+header h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .app-nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+header .app-main-btn {
+  background-color: #47633F;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  height: 35px;
+  width: auto;
+  margin-left: auto;
+}
+
+.app-main-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  margin: 0 calc(var(--gutter-width) * 2);
+  height: calc(100% - var(--header-height) - var(--footer-height));
+  box-sizing: border-box;
+}
+
+.app-main {
+  flex: 3;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+section.app-main h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.app-sidebar {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.app-bg-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.app-bg-cont img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: 0 calc(var(--gutter-width) * 2);
+  height: var(--footer-height);
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  color: white;
+}
+
+footer p {
+  margin-top: 1px;
+  text-align: center;
+  color: white;
+}
