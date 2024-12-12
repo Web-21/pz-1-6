@@ -10,7 +10,7 @@
       padding: 0 18px;
   }
 
-  .side-section {
+  .sidebar {
       float: none;
       width: 88%;
       margin: 12px 18px;
@@ -24,7 +24,7 @@
       width: 68%;
   }
 
-  .side-section {
+  .sidebar {
       width: 28%;
   }
 }
