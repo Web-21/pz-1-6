@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+font-family: Arial, sans-serif;
+line-height: 1.5;
+margin: 0;
+padding: 0;
+}
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+header h2, footer h2 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+header nav {
+  text-align: left;
+  margin: 10px 0;
+}
+.app-nav-list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 20px;
+}
+.app-main-btn {
+  background-color: #007bff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+.app-main-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+.app-main {
+  flex: 3;
+  padding: 20px;
+  border-radius: 8px;
+}
+section.app-main h1{
+  text-align: center;
+}
+.app-sidebar {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+.app-bg-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.app-bg-cont img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+footer{
+  align-items: center;
+}
+footer p {
+  margin-top: 1px;
+  text-align: center;
+}
