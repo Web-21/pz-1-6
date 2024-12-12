@@ -1,0 +1,34 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+   
+  }
+  
+  /*Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) {
+    .app-main-wrap {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+  /*Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) {
+    .app-main-wrap {
+      grid-template-columns: 3fr 1fr; 
+      gap: var(--gutter-width);
+    }
+  
+    /* Вирівнювання по висоті якщо потрібно */
+    .app-main,
+    .app-sidebar {
+      align-self: start;
+      height: 100%; 
+    }
+  }
+  
+  /*Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+    .app-main-wrap {
+      grid-template-columns: 4fr 1fr;
+    }
+  }
+  
